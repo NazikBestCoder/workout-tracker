@@ -13,13 +13,13 @@ const WorkoutSchema = new Schema({
     },
     exercises: [
     {
-        {
+        type: {
             type: String,
             trim: true,
-            enum: ["cardio" "lifting"],
+            enum: ["cardio", "resistance"],
             required: [true, "workout type is required"],
         },
-     name: {
+        name: {
             type: String,
             trim: true,
             required: ["Name of exerciseis required"],
@@ -36,7 +36,7 @@ const WorkoutSchema = new Schema({
             type: Number,
             
 
-        }
+        },
         sets: {
             type: Number,
         },
