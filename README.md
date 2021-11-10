@@ -16,7 +16,7 @@ Workout-tracker helps people reach their fitness goals by craeting workouts and 
 
 ## Usage
 - If you clone this repo you will need to run 'npm i' to install the relevant npm packages.
-- There is a live build at https://polar-garden-81010.herokuapp.com/login
+- There is a live build at 
 
 ## Credits
 - Nazik Askarbekkyzy
