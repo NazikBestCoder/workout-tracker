@@ -1,18 +1,16 @@
 const express = require("express");
-const logger = require("morgan");
 const mongoose = require("mongoose");
-const apiRoutes = require("./controllers/routes/apiRoutes");
-const htmlRoutes = require("./controllers/routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 const PORT = process.env.PORT || 3005;
-
 const app = express();
-app.use(logger("dev"));
+
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutsdb", { 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
     useNewUrlParser: true });
 
 app.use(apiRoutes);
