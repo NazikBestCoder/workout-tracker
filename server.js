@@ -11,12 +11,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
-    useNewUrlParser: true 
+    useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify: false,
+    useFindAndModify: false
+   
  });
- 
+ //  mongodb+srv://nazik_1:<Turarask100$>@workout.aanpr.mongodb.net/workout?retryWrites=true&w=majority
 
 app.use(apiRoutes);
 app.use(htmlRoutes);
