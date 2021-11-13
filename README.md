@@ -14,6 +14,7 @@ Workout-tracker helps people reach their fitness goals by craeting workouts and 
 - [Questions](#questions)
 ## Installation
 https://stark-escarpment-69150.herokuapp.com/ 
+you have to load heroku  multiple times for it to work well.
 ## Usage
 - If you clone this repo you will need to run 'npm i' to install the relevant npm packages.
 - There is a live build at 
@@ -36,5 +37,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Badges
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 ## ScreenShots
-<img src="./assets/workout1.png"/>
+<img src="./assets/workout2.png"/>
 <img src="./assets/workout.png"/>
+<img src="./assets/workout1.png"/>
