@@ -1,4 +1,4 @@
-const Workout = require("../../models/workout.js");
+const Workout = require("../../models/workout");
 const express = require("express");
 const router = express.Router();
 
@@ -13,7 +13,7 @@ router.post("/api/workouts", ({ body }, res) => {
       });
     } catch (err) {
       console.log(err);
-      res.sendStatus(404).json(err);
+      res.sendStatus(400).json(err);
     }
   });
   
@@ -35,7 +35,7 @@ router.post("/api/workouts", ({ body }, res) => {
   
     } catch (err) {
       console.log(err);
-      res.sendStatus(404).json(err);
+      res.sendStatus(500).json(err);
     }
   });
   
@@ -51,7 +51,7 @@ router.post("/api/workouts", ({ body }, res) => {
       res.json(results);
     } catch (err) {
       console.log(err);
-      res.sendStatus(404).json(err);
+      res.sendStatus(500).json(err);
     }
   });
  
@@ -71,7 +71,7 @@ router.post("/api/workouts", ({ body }, res) => {
       res.json(workoutData);
     } catch (err) {
       console.log(err);
-      res.sendStatus(404).json(err);
+      res.sendStatus(500).json(err);
     }
   });
   
@@ -82,7 +82,7 @@ router.post("/api/workouts", ({ body }, res) => {
       });
     } catch (err) {
       console.log(err);
-      res.sendStatus(404).json(err);
+      res.sendStatus(500).json(err);
     }
   });
   
